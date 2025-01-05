@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập Điểm Tổng Hợp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="modal" id="modal">
+        <h2>Chọn môn học</h2>
+        <div id="subjectCheckboxes">
+        </div>
+        <button id="doneButton">Done</button>
+    </div>
+
+    <h1>Nhập Điểm</h1>
+    <div class="button-container">
+        <button id="addColumnButton">Thêm cột TX</button>
+        <button id="deleteColumnButton">Xóa cột TX cuối</button>
+        <button id="resetButton">Reset</button>
+        <button id="editSubjectsButton">Chỉnh sửa môn học</button>
+        <button id="nihaoButton">Đánh giá</button>
+    </div>
+    <table id="scoreTable">
+        <thead>
+            <tr>
+                <th></th>
+                <th id="txHeader" colspan="4">TX</th>
+                <th>GK</th>
+                <th>CK</th>
+                <th>TB</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div id="evaluationResult"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
